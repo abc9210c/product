@@ -1,3 +1,17 @@
+# 讀取檔案
+
+with open('product.csv', 'r', encoding='utf-8') as f:
+	for line in f:
+		s = line.strip().split(',')
+		# name, price = line.strip().split(',')
+		# product.append([name, price])
+		# 不用print(s)
+		# name = s[0]
+		# price =s[1]
+		print(s)
+#print(product)
+
+
 product = []
 
 while True:
